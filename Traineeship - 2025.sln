@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traineeship - 2025", "Traineeship - 2025\Traineeship - 2025.csproj", "{FFAEA863-B819-435C-8114-27EEAFF3C802}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Traineeship - 2025", "Traineeship - 2025\Traineeship - 2025.csproj", "{FFAEA863-B819-435C-8114-27EEAFF3C802}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "29.12.2024 - remove duplicate words", "29.12.2024 - remove duplicate words\29.12.2024 - remove duplicate words.csproj", "{84B1120B-7146-4F94-9F5C-775D1ABDD33A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "28.01.2025 - calc", "28.01.2025 - calc\28.01.2025 - calc.csproj", "{4E3C2ED5-8BF7-4BED-AE9D-2C96A6C19AFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{FFAEA863-B819-435C-8114-27EEAFF3C802}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFAEA863-B819-435C-8114-27EEAFF3C802}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFAEA863-B819-435C-8114-27EEAFF3C802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84B1120B-7146-4F94-9F5C-775D1ABDD33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84B1120B-7146-4F94-9F5C-775D1ABDD33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84B1120B-7146-4F94-9F5C-775D1ABDD33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84B1120B-7146-4F94-9F5C-775D1ABDD33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E3C2ED5-8BF7-4BED-AE9D-2C96A6C19AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3C2ED5-8BF7-4BED-AE9D-2C96A6C19AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3C2ED5-8BF7-4BED-AE9D-2C96A6C19AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3C2ED5-8BF7-4BED-AE9D-2C96A6C19AFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
