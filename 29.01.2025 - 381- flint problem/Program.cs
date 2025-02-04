@@ -48,7 +48,8 @@ Treasure!
                 string transform = Console.ReadLine();
                 strings[a] = transform;
                 //Console.WriteLine(transform);
-               
+                firstPart = "";
+                secondPart = "";
                 for (int i = 0; i < transform.Length; i++)
                 {
                     if (transform[i] == 32)
@@ -64,31 +65,22 @@ Treasure!
                 if (firstPart == "North")
                 {
                     ns += secondPartInt;
-                    firstPart = "";
-                    secondPart = "";
-                    secondPartInt = 0;
-                    //Console.WriteLine(secondPartInt);
+                    
                 }
                 else if (firstPart == "South")
                 {
                     ns -= secondPartInt;
-                    firstPart = "";
-                    secondPart = "";
-                    secondPartInt = 0;
+                   
                 }
                 else if (firstPart == "East")
                 {
                     ew += secondPartInt;
-                    firstPart = "";
-                    secondPart = "";
-                    secondPartInt = 0;
+                    
                 }
                 else if (firstPart == "West")
                 {
                     ew -= secondPartInt;
-                    firstPart = "";
-                    secondPart = "";
-                    secondPartInt = 0;
+                   
                 }
                 else
                 {
