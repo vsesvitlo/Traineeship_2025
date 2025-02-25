@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.02.2025 - task for 385",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neuro_task_18.02", "neuro_task_18.02\neuro_task_18.02.csproj", "{E4350C40-B4E4-4041-BE35-8533F38E263C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25.02", "25.02\25.02.csproj", "{8D251306-82F9-4729-ABE6-AE4742272518}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{E4350C40-B4E4-4041-BE35-8533F38E263C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4350C40-B4E4-4041-BE35-8533F38E263C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4350C40-B4E4-4041-BE35-8533F38E263C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D251306-82F9-4729-ABE6-AE4742272518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D251306-82F9-4729-ABE6-AE4742272518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D251306-82F9-4729-ABE6-AE4742272518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D251306-82F9-4729-ABE6-AE4742272518}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
