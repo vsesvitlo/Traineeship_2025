@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neuro_task_18.02", "neuro_t
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25.02", "25.02\25.02.csproj", "{8D251306-82F9-4729-ABE6-AE4742272518}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "26.02", "26.02\26.02.csproj", "{94BF8141-8B48-40C1-ACF8-849EB24C6109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "26.02 - 2", "26.02 - 2\26.02 - 2.csproj", "{BE7582D7-0A91-4926-B889-A772BC65BE4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{8D251306-82F9-4729-ABE6-AE4742272518}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D251306-82F9-4729-ABE6-AE4742272518}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D251306-82F9-4729-ABE6-AE4742272518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94BF8141-8B48-40C1-ACF8-849EB24C6109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94BF8141-8B48-40C1-ACF8-849EB24C6109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94BF8141-8B48-40C1-ACF8-849EB24C6109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94BF8141-8B48-40C1-ACF8-849EB24C6109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7582D7-0A91-4926-B889-A772BC65BE4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7582D7-0A91-4926-B889-A772BC65BE4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7582D7-0A91-4926-B889-A772BC65BE4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7582D7-0A91-4926-B889-A772BC65BE4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
