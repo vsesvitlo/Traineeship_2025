@@ -10,19 +10,40 @@ namespace _27._02_delegate___1
 {
     internal class Program
     {
-        delegate int Predicate(int a);
-        static void FilterList(List<int> func, Predicate pred)
+        //delegate int Predicate(int a);
+        static List<int> FilterList(List<int> numbers, Predicate <int> func)
         {
-           
-            if (pred == true)
-               
+            /* for (int i = 0; i < numbers.Count; i++)
+             {
+                 if (func(numbers[i]) != true)
+                 {
+                     numbers.RemoveAt(i);
+                     i--;
+                 }
 
-            return 
+             }*/
+            for (int i = numbers.Count - 1; i >= 0; i--)
+            {
+                if (func(numbers[i]) != true)
+                {
+                    numbers.RemoveAt(i);
+                    
+                }
+            }
+            return numbers;
         }
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            List<int> numbers = new List<int>();
+            numbers.AddRange(new int[] { 1, 2, 3, 4, 5 });
+            FilterList(numbers, x => (x % 2)==0);
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+            
         }
     }
 }
