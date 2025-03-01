@@ -23,7 +23,10 @@ namespace _28._02___delegate___2
         {
             List<string> words = new List<string>();
             words.AddRange(new string[] { "adfg", "Ryiu;j", "k", "ppp" });
-            ToIntTransform
+            for (int i = 0; i < words.Count; i++)
+            {
+               Console.WriteLine(words[i].Length);
+            }
         }
     }
 }
