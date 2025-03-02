@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.03 _arrays_lists_4", "01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.03 _arrays_lists_5", "01.03 _arrays_lists_5\01.03 _arrays_lists_5.csproj", "{C85FD58D-7893-478E-808E-3118B6C50CA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.03 _arrays_lists_6", "01.03 _arrays_lists_6\01.03 _arrays_lists_6.csproj", "{CC03CDC2-FE43-468F-B3E6-3D6285839E8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{C85FD58D-7893-478E-808E-3118B6C50CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C85FD58D-7893-478E-808E-3118B6C50CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C85FD58D-7893-478E-808E-3118B6C50CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC03CDC2-FE43-468F-B3E6-3D6285839E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC03CDC2-FE43-468F-B3E6-3D6285839E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC03CDC2-FE43-468F-B3E6-3D6285839E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC03CDC2-FE43-468F-B3E6-3D6285839E8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
