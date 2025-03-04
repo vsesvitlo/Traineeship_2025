@@ -19,18 +19,23 @@ namespace _02._03__arrays_lists_8
 
             foreach (int i in list)
             {
+                Console.WriteLine(i);
                 median += i;
             }
             median = median / list.Count;
             forMediana = (int)Math.Floor(median);
-            for (int k = 0; k < list.Count; k++)
+            for (int k = list.Count - 1; k >= 0; k--)
             {
-               if (forMediana < list[k])
-               {
-                 list.Remove(k);
-               }
-               Console.WriteLine(list[k]);
 
+               if (forMediana > list[k])
+               {
+                 list.RemoveAt(k);
+               }
+
+            }
+            for(int l = 0; l < list.Count; l++)
+            {
+                Console.WriteLine(list[l]);
             }
         }
     }

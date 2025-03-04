@@ -12,19 +12,17 @@
           
             for (int j = 0, i = 0; j < ints2.Length; j++, i++)
             {
-                    if (i == ints.Length / 2)
+                    ints2[j] = ints[i];
+                    if (j == ints.Length / 2)
                     {
+                        i--;
                         ints2[j] = k;
-                        ints2[j + 1] = ints[i];
                     }
                     else if(i == ints.Length)
                     {
                         ints2[j] = ints[ints.Length - 1];
                     }
-                    else
-                    {
-                        ints2[j] = ints[i];
-                    }
+                    
                 Console.WriteLine(ints2[j]);
             }
         }

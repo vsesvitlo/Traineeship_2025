@@ -14,24 +14,23 @@ namespace _01._03__arrays_lists_4
                 //Console.Write("{0,8:N0}", rand.Next(10, 99);
                 //i = rand.Next(10, 99);
                 list.Add(rand.Next(10, 99));
-                //Console.WriteLine(list[i]);
+                Console.WriteLine(list[i]);
                
             }
 
-
-
-            for (int i = 0; i < list.Count; i++) {
+            for (int i = list.Count - 1; i >= 0; i--) {
                 a = Convert.ToInt32(list[i]);
                 // Console.WriteLine(list[i].GetType());
                 if (a % 2 == 0)
                 {
                     list.RemoveAt(i);
                 }
-                else
-                {
-                    Console.WriteLine(list[i]);
-                }         
-            }  
+                       
+            }
+            for (int k = 0; k < list.Count; k++)
+            {
+                Console.WriteLine(list[k]);
+            }
         }
     }
 }

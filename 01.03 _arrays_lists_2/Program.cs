@@ -9,7 +9,7 @@ namespace _01._03__arrays_lists_2
         {
             List<string> words = new List<string>();
             words.AddRange(new string[] { "adfg", "Ryiu;j", "k"});
-            words.ToArray();
+           string[] arr = words.ToArray();
             for (int i = words.Count - 1; i >= 0; i--)
             {
                 Console.WriteLine(words[i]);
