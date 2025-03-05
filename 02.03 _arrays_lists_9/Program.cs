@@ -23,9 +23,10 @@ namespace _02._03__arrays_lists_9
             }
             //Console.WriteLine(count);
             string[] words = new string[count];
+            //for (int j = forReading.Length - 1; j >=0; j--)
             for (int j = 0; j < forReading.Length; j++)
             {
-                for(int k = 0; k < count; k++)
+                for(int k = 0; k < count; k++) 
                 {
                     word = forReading.Substring(0, j);
                     words[k] = word;
