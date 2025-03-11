@@ -37,10 +37,16 @@ namespace _02._03__arrays_lists_9
                     }
                    // word = forReading.Substring(j, forReading.Length - 1);
                     words[k] = word;
+                    if (forReading[count - 1] == 96)
+                    {
+                        words[k] = word;
+                    } //96 in the end
+
                 }
 
-
+                
             }
+
             Console.WriteLine(word);
         }
     }
