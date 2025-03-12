@@ -67,6 +67,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.03", "10.03\10.03.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.03 - 1", "10.03 - 1\10.03 - 1.csproj", "{064C6759-F75D-4479-91FE-EBBA3336B057}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.03 - zeroos massive sorting", "12.03 - zeroos massive sorting\12.03 - zeroos massive sorting.csproj", "{824275B1-7200-459D-9CEC-3479CECD087D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.03 - loop_00", "12.03 - loop_00\12.03 - loop_00.csproj", "{DBB1595B-22BC-4606-96E1-C26549B41484}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +205,14 @@ Global
 		{064C6759-F75D-4479-91FE-EBBA3336B057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{064C6759-F75D-4479-91FE-EBBA3336B057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{064C6759-F75D-4479-91FE-EBBA3336B057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824275B1-7200-459D-9CEC-3479CECD087D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824275B1-7200-459D-9CEC-3479CECD087D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824275B1-7200-459D-9CEC-3479CECD087D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824275B1-7200-459D-9CEC-3479CECD087D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB1595B-22BC-4606-96E1-C26549B41484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB1595B-22BC-4606-96E1-C26549B41484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB1595B-22BC-4606-96E1-C26549B41484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB1595B-22BC-4606-96E1-C26549B41484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
