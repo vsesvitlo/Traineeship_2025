@@ -16,10 +16,10 @@
                     }
                     else
                     {
-                       while (nums[j] == 0 && j < nums.Length - 1)
+                        while (nums[j] == 0 && j < nums.Length - 1)
                         {
                             j++;
-                            
+
                         }
                         nums[i] = nums[j];
                         nums[j] = 0;
@@ -27,13 +27,16 @@
                     }
 
                 }
-                
+                else
+                {
+                    j++;
+                }
             }
             return nums;
         }
          static void Main(string[] args)
         {
-            int[] nums = { 0, 1, 0, 3, 12 };
+            int[] nums = {4, 2, 4, 0, 0, 3, 0, 5, 1, 0};
             int[] nums2 = MoveZeroes(nums);
             for (int i = 0; i < nums2.Length; i++)
             {
