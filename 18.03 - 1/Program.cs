@@ -15,7 +15,7 @@
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter some year");
+            Console.WriteLine("Enter some year"); 
             int year = int.Parse(Console.ReadLine());
             Console.WriteLine(YearCheck(year));
         }
