@@ -8,12 +8,12 @@ namespace _25._03___15
     {
         static void Main(string[] args)
         {
-            List<double> list = new List<double> { 10, 3.6, 20 };
+            List<string> list = new List<string> { "10", "5.7", "20" };
             double a = 0;
             int sum = 0;
             for (int i = 0; i < list.Count; i++)
             {
-                a = list[i];//??
+                a = Convert.ToDouble(list[i]);
                 sum +=Convert.ToInt32(a);
             }
             Console.WriteLine(sum);

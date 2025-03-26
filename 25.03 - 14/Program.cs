@@ -14,9 +14,9 @@ namespace _25._03___14
             double item = double.Parse(Console.ReadLine());
             main = (int)item;
             result += Convert.ToString(main); 
-            Console.WriteLine(result.GetType());
-            Console.WriteLine(main.GetType());
-            Console.WriteLine(item.GetType());
+            Console.WriteLine(result);
+            Console.WriteLine(main);
+            Console.WriteLine(item);
         }
     }
 }

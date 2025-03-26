@@ -1,4 +1,6 @@
-﻿namespace _21._03___1
+﻿//https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
+
+namespace _21._03___1
 {
     internal class Program
     {
