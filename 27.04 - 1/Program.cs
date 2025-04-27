@@ -60,9 +60,8 @@ namespace _27._04___1
             FirstExample.title = "Hygge";
             FirstExample.author = "Meik Wiking";
             FirstExample.pages = 285;
-            Console.WriteLine(FirstExample.Author);
-            Console.WriteLine(FirstExample.Title);
-            Console.WriteLine(FirstExample.Pages);
+            Console.WriteLine("Book is written by: " + FirstExample.Author + ", named " +
+                FirstExample.Title + " and has " + FirstExample.Pages + " pages.");
         }
     }
 }
