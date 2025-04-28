@@ -5,7 +5,7 @@ namespace _27._04___3
 {
     public class Week
     {
-        public string[] week = new string[7];
+        private string[] week = new string[7];//? private or public?
         public string this[int index]
         {
             get
