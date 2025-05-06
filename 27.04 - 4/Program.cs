@@ -12,11 +12,9 @@ namespace _27._04___4
     */
     public class Circle
     {
-        private readonly double area;
         public double radius;
         public Circle(double radius)
         {
-           // this.area = Math.PI * Math.Pow(radius, 2);
             this.Radius = radius;
         }
 
@@ -37,12 +35,7 @@ namespace _27._04___4
             {
                 return Math.PI * Math.Pow(radius, 2);
             }
-            set
-            {
-                Area = Math.PI * Math.Pow(radius, 2);
-            }
         }
-
     }
     }
     internal class Program

@@ -3,6 +3,8 @@
 Реалізуй індексатор 
 для доступу до оцінок за назвою предмета
 (наприклад, grades["Math"] = 95).*/
+using System.Runtime.ExceptionServices;
+
 namespace _28._04___5
 {
     public class StudentGrades
@@ -11,6 +13,10 @@ namespace _28._04___5
         public int this[string key] //???
         {
         get { 
+                if (!grade.ContainsKey(key))
+                {
+                    return -1;
+                }
                 return grade[key]; 
             }
         set { 
@@ -24,7 +30,7 @@ namespace _28._04___5
         static void Main(string[] args)
         {
             
-            Dictionary<string, int> grades = new Dictionary<string, int>();//??
+           Dictionary<string, int> grades = new Dictionary<string, int>();//??
 
             grades["Math"] = 95;
             grades["English"] = 90;
@@ -32,8 +38,12 @@ namespace _28._04___5
 
             foreach (KeyValuePair<string, int> subject in grades)
             {
-                Console.WriteLine($"Subject: {subject.Key}, Grade: {subject.Value}");
+               // Console.WriteLine($"Subject: {subject.Key}, Grade: {subject.Value}");
             }
+
+            StudentGrades FirstExample = new StudentGrades();
+            FirstExample.grade = grades;
+            Console.WriteLine(FirstExample["Math"]);
         }
     }
 }
