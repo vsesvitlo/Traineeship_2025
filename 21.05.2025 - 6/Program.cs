@@ -12,44 +12,44 @@
 {
     internal class Program
     {
-        interface IPayable
+        interface ILogger
         {
-            void Pay();
+            void Log();
         }
-        class Employee : IPayable
+        class ConsoleLogger : ILogger
         {
 
-            void IPayable.Pay()
+            void ILogger.Log()
             {
-                Console.WriteLine("I get payment");
+                Console.WriteLine("Logging");
             }
 
-            public void Pay()
+            public void Log()
             {
-                IPayable fromEmployee = new Employee();
-                fromEmployee.Pay();
+                ILogger log = new ConsoleLogger();
+                log.Log();
             }
         }
-        class Invoice : IPayable
+        class FileLogger : ILogger
         {
 
-            void IPayable.Pay()
+            void ILogger.Log()
             {
-                Console.WriteLine("I am payment");
+                Console.WriteLine("logging file");
             }
 
-            public void Pay()
+            public void Log()
             {
-                IPayable toEmployee = new Invoice();
-                toEmployee.Pay();
+                FileLogger file = new FileLogger();
+                file.Log();
             }
         }
         static void Main(string[] args)
         {
-            IPayable employee = new Employee();
-            employee.Pay();
-            IPayable invoice = new Invoice();
-            invoice.Pay();
+            ILogger console = new ConsoleLogger();
+            console.Log();
+            ILogger file = new FileLogger();
+            file.Log();
         }
     }
 }

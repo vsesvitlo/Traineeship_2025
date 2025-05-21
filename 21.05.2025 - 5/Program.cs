@@ -4,44 +4,49 @@
 {
     internal class Program
     {
-        interface IPayable
+        interface IShape
         {
-            void Pay();
+            void GetArea(int a, int b);
+            void GetPerimeter(int a, int b);
         }
-        class Employee : IPayable
+        class Rectangle : IShape
         {
 
-            void IPayable.Pay()
+            void IShape.GetArea(int a, int b)
             {
-                Console.WriteLine("I get payment");
+                int area = a * b;
+                Console.WriteLine(area);
             }
 
-            public void Pay()
+           public void GetPerimeter(int a, int b)
             {
-                IPayable fromEmployee = new Employee();
-                fromEmployee.Pay();
+                int p = (a + b) * 2;
+                IShape rectangle = new Rectangle();
+                rectangle.GetPerimeter(6, 7);
             }
         }
-        class Invoice : IPayable
+        class Circle : IShape
         {
 
-            void IPayable.Pay()
+            void IShape.GetArea()
             {
-                Console.WriteLine("I am payment");
+                Console.WriteLine("Area");
             }
 
-            public void Pay()
+            public void GetPerimeter()
             {
-                IPayable toEmployee = new Invoice();
-                toEmployee.Pay();
+                IShape circle = new Circle();
+                circle.GetPerimeter();
             }
         }
         static void Main(string[] args)
         {
-            IPayable employee = new Employee();
-            employee.Pay();
-            IPayable invoice = new Invoice();
-            invoice.Pay();
+            IShape r = new Rectangle();
+            r.GetArea(8, 9);
+            r.GetPerimeter( 6, 3);
+            IShape c = new Circle();
+            c.GetPerimeter();
+            c.GetArea();
         }
     }
 }
