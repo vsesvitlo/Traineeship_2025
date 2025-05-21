@@ -5,44 +5,33 @@ namespace _21._05._2025___9
 {
     internal class Program
     {
-        interface ILogger
+        interface IClonable
         {
-            void Log();
+            void Clone();
         }
-        class ConsoleLogger : ILogger
+        class Document : IClonable
         {
+            string title;
+            string text;
 
-            void ILogger.Log()
+            void IClonable.Clone()
             {
-                Console.WriteLine("Logging");
+                Console.WriteLine( title + text);
             }
 
-            public void Log()
+            public void Clone()
             {
-                ILogger log = new ConsoleLogger();
-                log.Log();
-            }
-        }
-        class FileLogger : ILogger
-        {
-
-            void ILogger.Log()
-            {
-                Console.WriteLine("logging file");
-            }
-
-            public void Log()
-            {
-                FileLogger file = new FileLogger();
-                file.Log();
+                IClonable clone = new Document();
+                clone.Clone();
             }
         }
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
-            ILogger console = new ConsoleLogger();
-            console.Log();
-            ILogger file = new FileLogger();
-            file.Log();
+            IClonable document = new Document();
+           
+           //?
+            document.Clone();
+           
         }
     }
 }
