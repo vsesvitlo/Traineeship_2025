@@ -1,7 +1,7 @@
-﻿/*6. Створи інтерфейс ILogger з методом Log(string message). 
-Реалізуй його для ConsoleLogger і FileLogger.
-
-*/namespace _21._05._2025___6
+﻿/*9. Створи інтерфейс IClonable з методом Clone().
+Реалізуй його для класу Document, який має заголовок і текст.
+*/
+namespace _21._05._2025___9
 {
     internal class Program
     {

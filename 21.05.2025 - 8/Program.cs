@@ -1,7 +1,7 @@
-﻿/*6. Створи інтерфейс ILogger з методом Log(string message). 
-Реалізуй його для ConsoleLogger і FileLogger.
-
-*/namespace _21._05._2025___6
+﻿/*8. Створи інтерфейс ICommand з методом Execute().
+Реалізуй для команд CopyCommand, PasteCommand, UndoCommand.
+*/
+namespace _21._05._2025___8
 {
     internal class Program
     {

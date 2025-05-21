@@ -1,7 +1,6 @@
-﻿/*6. Створи інтерфейс ILogger з методом Log(string message). 
-Реалізуй його для ConsoleLogger і FileLogger.
-
-*/namespace _21._05._2025___6
+﻿/*10. Створи інтерфейс ICalculable з методом Calculate(). 
+ * Реалізуй для класів TaxCalculator, DiscountCalculator, LoanCalculator.*/
+namespace _21._05._2025___10
 {
     internal class Program
     {
