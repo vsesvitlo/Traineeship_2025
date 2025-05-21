@@ -5,44 +5,60 @@ namespace _21._05._2025___8
 {
     internal class Program
     {
-        interface ILogger
+        interface ICommand
         {
-            void Log();
+            void Execute();
         }
-        class ConsoleLogger : ILogger
+        class CopyCommand : ICommand
         {
 
-            void ILogger.Log()
+            void ICommand.Execute()
             {
-                Console.WriteLine("Logging");
+                Console.WriteLine("Copping");
             }
 
-            public void Log()
+            public void Execute()
             {
-                ILogger log = new ConsoleLogger();
-                log.Log();
+                ICommand copy = new CopyCommand();
+                copy.Execute();
             }
         }
-        class FileLogger : ILogger
+        class PasteCommand : ICommand
         {
 
-            void ILogger.Log()
+            void ICommand.Execute()
             {
-                Console.WriteLine("logging file");
+                Console.WriteLine("Pasting");
             }
 
-            public void Log()
+            public void Execute()
             {
-                FileLogger file = new FileLogger();
-                file.Log();
+                ICommand paste = new PasteCommand();
+                paste.Execute();
+            }
+        }
+        class UndoCommand : ICommand
+        {
+
+            void ICommand.Execute()
+            {
+                Console.WriteLine("Undoing");
+            }
+
+            public void Execute()
+            {
+                ICommand paste = new UndoCommand();
+                paste.Execute();
             }
         }
         static void Main(string[] args)
         {
-            ILogger console = new ConsoleLogger();
-            console.Log();
-            ILogger file = new FileLogger();
-            file.Log();
+            ICommand copy = new CopyCommand();
+            copy.Execute();
+            ICommand paste = new PasteCommand();
+            paste.Execute();
+            ICommand undo = new UndoCommand();
+            undo.Execute();
         }
     }
 }

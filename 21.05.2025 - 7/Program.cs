@@ -15,11 +15,11 @@ namespace _21._05._2025___7
 
             void IPlayable.Play()
             {
-                Console.WriteLine("Video player play");
+                Console.WriteLine("Video player plays");
             }
             void IPlayable.Pause()
             {
-                Console.WriteLine("Video player pause");
+                Console.WriteLine("Video player pauses");
             }
 
             public void Play()
@@ -38,11 +38,11 @@ namespace _21._05._2025___7
 
             void IPlayable.Play()
             {
-                Console.WriteLine("Music player play");
+                Console.WriteLine("Music player plays");
             }
             void IPlayable.Pause()
             {
-                Console.WriteLine("Music player pause");
+                Console.WriteLine("Music player pauses");
             }
 
             public void Play()
@@ -60,8 +60,10 @@ namespace _21._05._2025___7
         {
             IPlayable video = new VideoPlayer();
             video.Play();
+            video.Pause();
             IPlayable music = new MusicPlayer();
             music.Play();
+            music.Pause();
         }
     }
 }
