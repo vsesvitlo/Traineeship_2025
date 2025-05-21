@@ -7,7 +7,7 @@
         interface ISerializable
         {
             void Serialize();
-            void Deserialize();
+            void Deserialize(string data);
         }
         class User : ISerializable
         {
@@ -22,7 +22,7 @@
                 ISerializable s = new User();
                 s.Serialize();
             }
-            void ISerializable.Deserialize()
+            void ISerializable.Deserialize(string data)
             {
                 Console.WriteLine("Deserializing");
             }
@@ -30,7 +30,7 @@
             public void Deserialize()
             {
                 ISerializable s = new User();
-                s.Deserialize();
+                s.Deserialize("aaa");
             }
         }
         static void Main(string[] args)

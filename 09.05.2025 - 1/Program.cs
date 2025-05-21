@@ -12,10 +12,10 @@ namespace _09._05._2025___1
         class Circle: IDrawable
         {
             
-            void IDrawable.Draw()
+            /*void IDrawable.Draw()
             {
                 Console.WriteLine("I draw circle");
-            }
+            }*/
 
             public void Draw()
             {

@@ -6,44 +6,52 @@
     {
         interface IShape
         {
-            void GetArea(int a, int b);
-            void GetPerimeter(int a, int b);
+            public double GetArea();
+            double GetPerimeter();
         }
         class Rectangle : IShape
         {
-
-            void IShape.GetArea(int a, int b)
+            double a;
+            double b;
+            public double GetArea()
             {
-                int area = a * b;
+                double area = a * b;
                 Console.WriteLine(area);
+                return area;                  
             }
 
-           public void GetPerimeter(int a, int b)
+           public double GetPerimeter()
             {
-                int p = (a + b) * 2;
-                IShape rectangle = new Rectangle();
-                rectangle.GetPerimeter(6, 7);
+               double area = 2 * (a + b);
+               return area;
             }
         }
         class Circle : IShape
         {
+            public double radius;
 
-            void IShape.GetArea()
+             public double GetArea()
             {
-                Console.WriteLine("Area");
+                double circleShape = Math.PI * Math.Pow(radius, 2);
+                Console.WriteLine(circleShape);
+                return circleShape;
+                
             }
 
-            public void GetPerimeter()
+            public double GetPerimeter()
             {
-                IShape circle = new Circle();
-                circle.GetPerimeter();
+                double perimeter = 2 * Math.PI * radius;
+                return perimeter;
             }
         }
         static void Main(string[] args)
         {
             IShape r = new Rectangle();
-            r.GetArea(8, 9);
-            r.GetPerimeter( 6, 3);
+            int a = 8;
+            int t = 6;
+            r.GetArea();
+              //r.GetArea(4, 9); //?
+            r.GetPerimeter();
             IShape c = new Circle();
             c.GetPerimeter();
             c.GetArea();
