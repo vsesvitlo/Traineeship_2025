@@ -4,44 +4,60 @@ namespace _21._05._2025___10
 {
     internal class Program
     {
-        interface ILogger
+        interface ICalculable
         {
-            void Log();
+            void Calculate();
         }
-        class ConsoleLogger : ILogger
+        class TaxCalculator : ICalculable
         {
 
-            void ILogger.Log()
+            void ICalculable.Calculate()
             {
-                Console.WriteLine("Logging");
+                Console.WriteLine("Taxes are calculating");
             }
 
-            public void Log()
+            public void Calculate()
             {
-                ILogger log = new ConsoleLogger();
-                log.Log();
+                ICalculable tax = new TaxCalculator();
+                tax.Calculate();
             }
         }
-        class FileLogger : ILogger
+        class DiscountCalculator : ICalculable
         {
 
-            void ILogger.Log()
+            void ICalculable.Calculate()
             {
-                Console.WriteLine("logging file");
+                Console.WriteLine("Discounts are calculating");
             }
 
-            public void Log()
+            public void Calculate()
             {
-                FileLogger file = new FileLogger();
-                file.Log();
+                ICalculable discount = new DiscountCalculator();
+                discount.Calculate();
+            }
+        }
+        class LoanCalculator : ICalculable
+        {
+
+            void ICalculable.Calculate()
+            {
+                Console.WriteLine("Loans are calculating");
+            }
+
+            public void Calculate()
+            {
+                ICalculable loans = new LoanCalculator();
+                loans.Calculate();
             }
         }
         static void Main(string[] args)
         {
-            ILogger console = new ConsoleLogger();
-            console.Log();
-            ILogger file = new FileLogger();
-            file.Log();
+            ICalculable console = new TaxCalculator();
+            console.Calculate();
+            ICalculable discount = new DiscountCalculator();
+            discount.Calculate();
+            ICalculable loan = new LoanCalculator();
+            loan.Calculate();
         }
     }
 }
