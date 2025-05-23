@@ -13,6 +13,11 @@
         {
             double a;
             double b;
+            public Rectangle (double a, double b)
+            {
+                this.a = a;
+                this.b = b;
+            }
             public double GetArea()
             {
                 double area = a * b;
@@ -29,8 +34,12 @@
         class Circle : IShape
         {
             public double radius;
+            public Circle( double r)
+            {
+                this.radius = r;
+            }
 
-             public double GetArea()
+            public double GetArea()
             {
                 double circleShape = Math.PI * Math.Pow(radius, 2);
                 Console.WriteLine(circleShape);
@@ -46,13 +55,13 @@
         }
         static void Main(string[] args)
         {
-            IShape r = new Rectangle();
+            IShape r = new Rectangle(4, 8);
             int a = 8;
             int t = 6;
             r.GetArea();
               //r.GetArea(4, 9); //?
             r.GetPerimeter();
-            IShape c = new Circle();
+            IShape c = new Circle(7);
             c.GetPerimeter();
             c.GetArea();
         }
