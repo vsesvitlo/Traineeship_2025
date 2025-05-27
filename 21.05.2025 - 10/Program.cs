@@ -11,7 +11,7 @@ namespace _21._05._2025___10
         class TaxCalculator : ICalculable
         {
 
-            void ICalculable.Calculate()
+            voidICalculable.Calculate()
             {
                 Console.WriteLine("Taxes are calculating");
             }
