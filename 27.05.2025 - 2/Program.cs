@@ -7,7 +7,7 @@
         Console.WriteLine("Enter please the n - quantity of enterings");
         int n = int.Parse( Console.ReadLine());
             int result = 0;
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i < n; i++)
             {
                 Console.WriteLine("Enter please the sumNum - number");
                 int sumNum = int.Parse(Console.ReadLine());
