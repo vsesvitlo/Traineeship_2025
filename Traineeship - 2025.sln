@@ -137,6 +137,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "28.05.2025 - 1", "28.05.202
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium Automation", "Selenium Automation\Selenium Automation.csproj", "{C2C0007E-E51F-454C-8907-616A8DFCF754}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1 - 10.06.2025", "TestProject1 - 10.06.2025\TestProject1 - 10.06.2025.csproj", "{88261727-1CED-43D2-B029-FCC03E411552}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -411,6 +413,10 @@ Global
 		{C2C0007E-E51F-454C-8907-616A8DFCF754}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2C0007E-E51F-454C-8907-616A8DFCF754}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2C0007E-E51F-454C-8907-616A8DFCF754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88261727-1CED-43D2-B029-FCC03E411552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88261727-1CED-43D2-B029-FCC03E411552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88261727-1CED-43D2-B029-FCC03E411552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88261727-1CED-43D2-B029-FCC03E411552}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
