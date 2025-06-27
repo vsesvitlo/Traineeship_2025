@@ -116,6 +116,19 @@
             {
                 Console.WriteLine("Failed");
             }
+
+            Console.Write("Testcase7:");
+            input = ",";
+            expectedResult = ",";
+            receivedResult = Capitalize(input);
+            if (expectedResult == receivedResult)
+            {
+                Console.WriteLine("Ok");
+            }
+            else
+            {
+                Console.WriteLine("Failed");
+            }
         }
     }
 }
