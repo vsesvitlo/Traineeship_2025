@@ -24,27 +24,33 @@ namespace _25._06._2025___2
            // string userDataDir = System.IO.Path.Combine(System.IO.Path.GetTempPath(), System.IO.Path.GetRandomFileName());
 
             IWebDriver driver = new ChromeDriver(options);
-            driver.Navigate().GoToUrl("https://picsart.com/");
+           //driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/login");
+           driver.Navigate().GoToUrl("https://www.saucedemo.com/");
+           
             driver.Manage().Window.Maximize();
           //  driver.Manage().Cookies.DeleteAllCookies();
             driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(10);// ?
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
-            driver.FindElement(By.XPath("//*[@id=\"onetrust-accept-btn-handler\"]")).Click();
-
-            driver.FindElement(By.XPath("//*[@id=\"header-content\"]/div")).Click();
-            driver.FindElement(By.XPath("//*[@id=\"auth-form\"]/div/div/button[1]")).Click();
 
             // driver.Navigate().GoToUrl("https://account.habr.com/");
-             driver.FindElement(By.XPath("//*[@id=\"auth-form\"]/div/div[1]/div/div/input")).SendKeys("sfrol91@gmail.com");
-            // driver.FindElement(By.XPath("//*[@id=\"ident-form\"]/div[2]/input")).SendKeys("h/DDL+A@SegD9k4");
-             driver.FindElement(By.XPath("//*[@id=\"auth-form\"]/div/div[2]/button[2]")).Click();
-            driver.FindElement(By.XPath("//*[@id=\"onetrust-accept-btn-handler\"]")).Click();
+            driver.FindElement(By.XPath("//*[@id=\"user-name\"]")).SendKeys("standard_user");
+            driver.FindElement(By.XPath("//*[@id=\"password\"]")).SendKeys("secret_sauce");
+            driver.FindElement(By.XPath("//*[@id=\"login-button\"]")).Click();
+            driver.FindElement(By.XPath("//*[@id=\"add-to-cart-sauce-labs-backpack\"]")).Click();
+            driver.FindElement(By.XPath("//*[@id=\"add-to-cart-sauce-labs-bike-light\"]")).Click();
+            driver.FindElement(By.XPath("//*[@id=\"add-to-cart-sauce-labs-fleece-jacket\"]")).Click();
+            driver.FindElement(By.XPath("//*[@id=\"shopping_cart_container\"]/a")).Click();
+            
+            // driver.FindElement(By.XPath("//*[@id=\"username\"]")).SendKeys("tomsmith");
+            //driver.FindElement(By.XPath("//*[@id=\"password\"]")).SendKeys("SuperSecretPassword!");
+            //driver.FindElement(By.XPath("//*[@id=\"auth-form\"]/div/div[2]/button[2]")).Click();
+            //driver.FindElement(By.XPath("//*[@id=\"login\"]/button")).Click();
 
             //*[@id="app"]/div/header/div/div/div[2]/a[2]/button
 
             options.AddArgument("--start-maximized");
             options.AddExcludedArgument("disable-popup-blocking");
-            driver.Quit();
+            //driver.Quit();
 
            // driver.manage().window().maximize();
           //driver.manage().deleteAllCookies();
