@@ -3,13 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>_01._03__arrays_lists_1</RootNamespace>
+    <RootNamespace>_12._09._2025</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\12.09.2025\12.09.2025.csproj" />
-  </ItemGroup>
 
 </Project>
