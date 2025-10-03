@@ -17,14 +17,25 @@ namespace _12._09._2025
         }
         static void Main(string[] args)
         {
-            int[] arr = new int[] { 5, 3, 8 , 2};
+            int[] arr = new int[] { 5, 3, 8, 4, 1, 2};
             Sorter sorter = new BubbleSorter();
-            sorter.Sort(arr);
+            //sorter.Sort(arr);
+            //sorter.ReturnResult(arr);
             Sorter sorterQ = new QuickSorter();
             sorterQ.Sort(arr);
+           // sorterQ.ReturnResult(arr);
+
         }
         abstract class Sorter {
             public abstract void Sort(int[] first);
+            public void ReturnResult(int[] result)
+            {
+                for(int a = 0; a < result.Length; a++)
+                {
+                    Console.WriteLine(result[a]);
+                }
+
+            }
         }
         class BubbleSorter : Sorter
         {
@@ -48,10 +59,6 @@ namespace _12._09._2025
                         }
                     }
                 }
-                for (int x = 0; x < first.Length; x++)
-                {
-                    Console.WriteLine(first[x]);
-                }
 
             }
             //public abstract int Compare(int x, int y);
@@ -62,24 +69,37 @@ namespace _12._09._2025
             public override void Sort(int[] first)
             {
                 int pivot = first[first.Length - 1];
-                for(int i = 0; i < first.Length; i++)
+                int[] newAr = new int[first.Length];
+                int k = newAr.Length - 1;
+                int j = 0;
+                for (int i = 0; i < first.Length; i++)
                 {
-                    if (first[i] > pivot)
+                    if (first[i] < pivot)
                     {
-                        for(int j = 0; j < pivot; j++)
-                        {
+                        
 
+                        if( j < newAr.Length)
+                        {
+                            newAr[j] = first[i];
+                            j++;
                         }
                     }
                     else
                     {
-                        for (int k = pivot; k >= 0; k--)
+                       
+                       if ( k >= 0)
                         {
-
+                            newAr[k] = first[i];
+                            k--;
                         }
                     }
                 }
+                for(int d = 0; d < newAr.Length; d++)
+                {
+                    Console.WriteLine(newAr[d]);
+                }
             }
+           
         }
     }
 }
