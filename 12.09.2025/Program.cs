@@ -17,7 +17,7 @@ namespace _12._09._2025
         }
         static void Main(string[] args)
         {
-            int[] arr = new int[] { 5, 3, 8, 4, 1, 2};
+            int[] arr = new int[] { 5, 3, 8, 1, 2, 4, 9};
             Sorter sorter = new BubbleSorter();
             //sorter.Sort(arr);
             //sorter.ReturnResult(arr);
@@ -72,11 +72,13 @@ namespace _12._09._2025
                 int[] newAr = new int[first.Length];
                 int k = newAr.Length - 1;
                 int j = 0;
+                int count1 = 0;
+                int count2 = 0;
                 for (int i = 0; i < first.Length; i++)
                 {
                     if (first[i] < pivot)
                     {
-                        
+                        count1++;
 
                         if( j < newAr.Length)
                         {
@@ -86,7 +88,7 @@ namespace _12._09._2025
                     }
                     else
                     {
-                       
+                        count2++;
                        if ( k >= 0)
                         {
                             newAr[k] = first[i];
@@ -94,9 +96,19 @@ namespace _12._09._2025
                         }
                     }
                 }
-                for(int d = 0; d < newAr.Length; d++)
+                int[] new1arr = new int[count1];
+                int[] new2arr = new int[count2];
+                //Array.Copy(newAr, new1arr, count1);
+                Array.Copy(newAr, count1+1 , new2arr, 0, count2);
+    
+
+                for (int d = 0; d < new1arr.Length; d++)
                 {
-                    Console.WriteLine(newAr[d]);
+                    //Console.WriteLine(new1arr[d]);
+                }
+                for (int e = 0; e < new2arr.Length; e++)
+                {
+                   Console.WriteLine(new2arr[e]);
                 }
             }
            
