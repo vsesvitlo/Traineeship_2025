@@ -17,14 +17,18 @@ namespace _12._09._2025
         }
         static void Main(string[] args)
         {
-            int[] arr = new int[] { 5, 3, 8, 1, 2, 4, 9};
+            int[] arr = new int[] { 5, 3, 8, 1, 2, 4};
+            //int[] arr = new int[] { 5, 3, 4};
             Sorter sorter = new BubbleSorter();
             //sorter.Sort(arr);
             //sorter.ReturnResult(arr);
             Sorter sorterQ = new QuickSorter();
             sorterQ.Sort(arr);
-           // sorterQ.ReturnResult(arr);
-
+            // sorterQ.ReturnResult(arr);
+            for (int r = 0; r < arr.Length; r++)
+            {
+                Console.WriteLine(arr[r]);
+            }
         }
         abstract class Sorter {
             public abstract void Sort(int[] first);
@@ -68,8 +72,13 @@ namespace _12._09._2025
         {
             public override void Sort(int[] first)
             {
+                if (first.Length == 0 || first.Length == 1)
+                {
+                    return;
+                }
                 int pivot = first[first.Length - 1];
                 int[] newAr = new int[first.Length];
+                //int[] resultAr = new int[first.Length];
                 int k = newAr.Length - 1;
                 int j = 0;
                 int count1 = 0;
@@ -86,7 +95,7 @@ namespace _12._09._2025
                             j++;
                         }
                     }
-                    else
+                    else if (first[i] > pivot)
                     {
                         count2++;
                        if ( k >= 0)
@@ -98,18 +107,23 @@ namespace _12._09._2025
                 }
                 int[] new1arr = new int[count1];
                 int[] new2arr = new int[count2];
-                //Array.Copy(newAr, new1arr, count1);
-                Array.Copy(newAr, count1+1 , new2arr, 0, count2);
-    
+                Array.Copy(newAr, new1arr, count1);
+                Array.Copy(newAr, count1 + 1, new2arr, 0, count2);
+                Sort(new1arr);
+                Sort(new2arr);
 
                 for (int d = 0; d < new1arr.Length; d++)
                 {
-                    //Console.WriteLine(new1arr[d]);
+                    first[d] = new1arr[d];
                 }
-                for (int e = 0; e < new2arr.Length; e++)
+               first[new1arr.Length] = pivot;
+
+                for (int e = new1arr.Length + 1, q = 0; e < first.Length; e++, q++)
                 {
-                   Console.WriteLine(new2arr[e]);
+                    first[e] = new2arr[q];
                 }
+
+                
             }
            
         }
