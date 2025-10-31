@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace _09._10._2025
+namespace _22._10._2025
 {
     internal class Program
     {
@@ -26,33 +26,33 @@ namespace _09._10._2025
         {
             public override void Sort(int[] first)
             {
-                int storage = 0;
-              
-                //int l = first.Length;
-                //int[] arrReduce = new int[l];
-                for (int k = 0; k < first.Length; k++)
+
+                int forMin = 0;
+                
+               for(int k = 0; k < first.Length; k++)
                 {
-                    //l--;
-                    
-                    for (int o = k; o < first.Length; o++)
+                    for (int a = k; a < first.Length; a++)
                     {
-                        if (first[k] > first[o])
+                        if (first[k] > first[a])
                         {
-                            storage = first[k];
-                            
-                            first[k] = first[o];
-                            first[o] = storage;
-                            
+                            forMin = first[k];
+                            first[k] = first[a];
+                            first[a] = forMin;
+
                         }
-                     
                     }
-                } 
+                }
+              
+
+
                 for (int j = 0; j < first.Length; j++)
                 {
                     Console.WriteLine(first[j]);
                 }
+                //Console.WriteLine(storage);
             }
         }
     }
 }
+
 
